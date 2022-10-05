@@ -1,0 +1,36 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{5858AECA-C111-40CB-8831-8E8322B412E4}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="..\Padrao\src\Padrao.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="Padrao">
+        <MSBuild Projects="..\Padrao\src\Padrao.dproj"/>
+    </Target>
+    <Target Name="Padrao:Clean">
+        <MSBuild Projects="..\Padrao\src\Padrao.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Padrao:Make">
+        <MSBuild Projects="..\Padrao\src\Padrao.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="Padrao"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="Padrao:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="Padrao:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>
