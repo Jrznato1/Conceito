@@ -63,7 +63,7 @@ const
 
   // Tipo de Pessoa
   TIPO_PESSOA_CIDADAO                             = 'C';
-  TIPO PESSOA_CLIENTE                             = 'O';
+  TIPO_PESSOA_CLIENTE                             = 'O';
 
 implementation
 

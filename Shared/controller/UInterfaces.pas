@@ -20,7 +20,6 @@ type
   IArquivoIni = interface;
   IConexao = interface;
   IDao = interface;
-  IPessoa = interface;
 
   // Interface da fabrica
   IFactory = interface
@@ -92,11 +91,6 @@ type
 //    function Atualizar: IDao;
 //    function Consultar: IDao;
 //    function Inserir: IDao;
-  end;
-
-  IPessoa = interface
-    ['{9E70455C-EF4D-4FBC-B6FA-ACACA7C8252D}']
-
   end;
 
 implementation

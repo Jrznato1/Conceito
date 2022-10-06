@@ -131,8 +131,6 @@
         </DCCReference>
         <DCCReference Include="..\..\Shared\controller\UTipos.pas"/>
         <DCCReference Include="..\..\Shared\model\UDao.pas"/>
-        <DCCReference Include="..\..\Shared\controller\UPessoa.pas"/>
-        <DCCReference Include="..\..\Shared\controller\UCadastro.pas"/>
         <DCCReference Include="..\..\Shared\controller\UUsuario.pas"/>
         <BuildConfiguration Include="Release">
             <Key>Cfg_2</Key>

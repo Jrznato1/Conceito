@@ -15,8 +15,6 @@ uses
   UFormConexao in '..\view\UFormConexao.pas' {frmConexao},
   UTipos in '..\..\Shared\controller\UTipos.pas',
   UDao in '..\..\Shared\model\UDao.pas',
-  UPessoa in '..\..\Shared\controller\UPessoa.pas',
-  UCadastro in '..\..\Shared\controller\UCadastro.pas',
   UUsuario in '..\..\Shared\controller\UUsuario.pas';
 
 {$R *.res}

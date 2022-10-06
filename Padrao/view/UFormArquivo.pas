@@ -45,7 +45,7 @@ begin
     if ExtractFileExt(dgArquivos.FileName) = ARQUIVO_EXTENSAO_INI then
     begin
       Sistema.SetTipoSistema(tsSaude);
-      Arquivo.CarregarIni( dgArquivos.FileName, Sistema );
+      Fabrica.Ini(dgArquivos.FileName, Sistema);
 
       Memo.Lines.Add('4RBD01 = ' + Sistema.GetBanco);
       Memo.Lines.Add('4RBD02 = ' + Sistema.GetBancoSecundario);
